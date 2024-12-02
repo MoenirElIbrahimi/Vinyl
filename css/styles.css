@@ -1,0 +1,166 @@
+/* Version: 1.0.0 */
+/* Author: Liam Kilsdonk */
+/* Date: 02-12-2024 */
+
+/* Hou alles overzichterlijk en geordend. */
+/* Hier komen de globale styling van de pagina's. */
+
+/********************************** || MAIN || **********************************/
+
+/********* || SUB-CLASSES || *********/
+
+/* Zoek snel CTRL + F 
+
+--> ALGEMEEN : Dit is de algemene styling van de pagina.
+--> PARAGRAPH : Dit is de styling van de texten.
+--> HOVER AND AFTER : Dit is de styling van de hover en after effecten.
+--> GLOBAL DIVS : Hier staan Section, body tags ect.
+
+*/
+
+/********************************** || ALGEMEEN || **********************************/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  ::selection {
+    color: var(--color-primary);
+    background-color: var(--color-black);
+  }
+  
+  :root {
+    --color-primary: #a4133c;
+    --color-secondary: #800f2f;
+    --color-tertiary: #590d22;
+    --color-quaternary: #000000;
+    --color-quinary: #ffffff;
+    --color-black: #000000;
+    --color-white: #ffffff;
+  }
+  
+  /********************************** || PARAGRAPH || **********************************/
+  
+  h1 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    font-weight: 700;
+    color: var(--font-color-headlines);
+  }
+  
+  h2 {
+    font-size: 50px !important;
+    line-height: 50px !important;
+    font-weight: 700;
+    color: var(--black) !important;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+  strong {
+    background: -webkit-linear-gradient(90deg, #a4133c, #590d22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    font-size: 19px;
+  }
+  
+  a {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+  
+  span {
+    margin: 0px 50px 0px 50px !important;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+  
+    h2 {
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 30px !important;
+      line-height: 30px !important;
+    }
+  
+    h2 {
+      font-size: 30px !important;
+      line-height: 30px !important;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 25px !important;
+      line-height: 25px !important;
+    }
+  
+    h2 {
+      font-size: 25px !important;
+      line-height: 25px !important;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  
+  /********************************** || HOVER AND AFTER || **********************************/
+  
+  a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(164, 19, 60, 1) 15%,
+      rgba(89, 13, 34, 1) 100%
+    );
+    visibility: visible;
+    opacity: 1;
+    transition: all 150ms linear 0ms;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
+  
+  a {
+    position: relative;
+    width: fit-content;
+  }
+  
+  /********************************** || GLOBAL DIVS || **********************************/
+  
+  section {
+    padding: 50px 150px 50px 150px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    section {
+      padding: 50px 50px 50px 50px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    section {
+      padding: 30px 20px 30px 20px !important;
+    }
+  }
