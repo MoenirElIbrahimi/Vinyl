@@ -1,3 +1,83 @@
+<<<<<<< HEAD
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .show-password {
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .show-password label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  #errorMessage {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+=======
 /* Version: 1.0.0 */
 /* Author: Liam Kilsdonk */
 /* Date: 02-12-2024 */
@@ -164,3 +244,4 @@
       padding: 30px 20px 30px 20px !important;
     }
   }
+>>>>>>> 217556b677927e7af4f31032fcf103cba8e7e272
