@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.item {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.favorite-btn {
+    padding: 5px 10px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+.favorite-btn.favorited {
+    color: red;
+    font-weight: bold;
+}
+.col-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
